@@ -7,18 +7,25 @@ html{
     width: 100vw; /* Ensures it fills the entire viewport width */
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body{
     color: white;
+    overflow: hidden;
 }
 
-#main-container{
+p {
+    font-family: "Arimo";
+}
+
+#main-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    width: 100vw;
+    max-width: 100%; /* Prevents horizontal scrollbar from scrollbar overlap */
+    overflow: hidden; /* Prevents unintended scrolling */
 }
 
 #bottom-bar{
@@ -26,6 +33,8 @@ body{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    font-size: 18px;
+    align-items: center;
 }
 
 .flex-container {
